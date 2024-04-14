@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  const origin = ['*.yusyp.dev'];
+  const origin: any[] = [/yusyp\.dev$/];
   if (process.env.NODE_ENV === 'local') {
     origin.push('http://localhost:3000');
   }
