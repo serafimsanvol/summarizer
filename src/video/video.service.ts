@@ -36,8 +36,6 @@ export class VideoService {
         buffer = await getFileBuffer(videoId);
       }
 
-      console.log(process.env.CLOUDFLARE_ACCOUNT_ID, process.env);
-
       const res = await axios({
         method: 'post',
         url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/openai/whisper`,
