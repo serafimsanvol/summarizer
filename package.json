@@ -35,6 +35,7 @@
     "ytdl-core": "4.11.5"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "0.5.4",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
